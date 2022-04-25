@@ -1,0 +1,193 @@
+.step-left {
+    box-shadow: 0px 0.941622px 4.70811px rgba(0, 0, 0, 0.27);
+    padding-top: 1.5rem;
+    padding-bottom: 70px; }
+.step-left-top {
+    text-align: center;
+    margin-bottom: 1.5rem; }
+.step-left-top .step-left-upload {
+    margin-bottom: 1.5rem; }
+.step-left-top .step-left-upload img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%; }
+.step-left-top .step-left-upload i {
+    height: 10rem;
+    width: 10rem;
+    line-height: 10rem;
+    background-color: #c4c4c4;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 4.5rem;
+    color: var(--clr-white); }
+.step-left-top .step-left-title {
+    font-size: 16px;
+    text-decoration: underline;
+    font-family: var(--font-4);
+    color: var(--clr-def);
+    font-weight: 400; }
+
+.step-list-content {
+    padding-left: 1rem; }
+.step-list-content .step-list {
+    font-family: var(--font-4);
+    font-weight: 400;
+    font-size: 16.0076px;
+    color: #C4C4C4;
+    position: relative;
+    z-index: 1; }
+.step-list-content .step-list::before {
+    background-color: #AFAFAF;
+    width: 1px;
+    height: 98%;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 4px;
+    left: 9px; }
+.step-list-content .step-list li {
+    display: block;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+    padding-left: 2rem; }
+.step-list-content .step-list li::before {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #AFAFAF;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-color: var(--clr-white); }
+.step-list-content .step-list li::after {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    height: .6rem;
+    width: .6rem;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #AFAFAF;
+    top: 50%;
+    left: 5px;
+    transform: translate(0, -50%); }
+.step-list-content .step-list li:last-child {
+    margin-bottom: 0; }
+
+.step-list-content .step-list li.proc-active {
+    color: #5887FF; }
+.step-list-content .step-list li.proc-active::before {
+    border: 1px solid #5887FF; }
+.step-list-content .step-list li.proc-active::after {
+    background-color: #5887FF !important;
+    height: 10px;
+    width: 10px;
+    left: 5px; }
+.step-list-content .step-list li.proc-completed {
+    color: #02C32D; }
+.step-list-content .step-list li.proc-completed::before {
+    border: 1px solid #02C32D; }
+.step-list-content .step-list li.proc-completed::after {
+    background-color: #02C32D;
+    height: 10px;
+    width: 10px;
+    left: 5px; }
+	
+	
+.preview-list-box ul {
+	margin: 0;
+	padding: 0;
+}
+
+.preview-list-box li {
+	list-style: none;
+}
+.preview-list-box span{
+	color: #788178;
+}
+.grid-2 {
+	display: grid;
+	grid-gap: 3rem;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.pd {
+	padding: 1rem;
+}
+
+
+.step-left-top {
+	text-align: center;
+	margin-right: 20rem;
+	margin-bottom: 4rem;
+}
+.step-left-top .step-left-upload {
+	margin-bottom: 1.5rem;
+}
+.step-left-top .step-left-upload img {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+.step-left-top .step-left-upload i {
+	height: 10rem;
+	width: 10rem;
+	line-height: 10rem;
+	background-color: #c4c4c4;
+	text-align: center;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 4.5rem;
+	color: var(--clr-white);
+}
+.step-left-top .step-left-title {
+	font-size: 16px;
+	text-decoration: underline;
+	font-family: var(--font-4);
+	color: var(--clr-def);
+	font-weight: 400;
+}
+
+.step-left-id {
+	font-family: var(--font-4);
+	font-weight: 400;
+	font-size: 16px;
+	color: #4C4C4C;
+	background: #F7F7F7;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	display: inline-block;
+	padding: 5px 7px;
+}
+
+.preview-title {
+	background: #4D4D4D;
+	line-height: 1;
+	padding: 5px 25px;
+	font-family: var(--font-4);
+	font-weight: 400;
+	font-size: 22.0052px;
+	color: #F0F0EE;
+	display: inline-block;
+	margin-bottom: 1rem;
+}
+
+.preview-list-box ul li {
+	display: grid;
+	grid-template-columns: 33% 5% 1fr;
+	font-family: var(--font-4);
+}
+
+.preview-profile {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
