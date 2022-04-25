@@ -17,4 +17,8 @@ class Product extends Model {
             ->leftJoin('categories', 'categories.id','=', 'subcategories.category_id')
            ->latest();
     }
+
+    public function subcategories(){
+        return $this->belongsToMany(Subcategory::class);
+    }
 }

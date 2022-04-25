@@ -26,25 +26,25 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         {!! Form::label('title','Title : ',['class'=>'font-weight-bold']) !!}
-                        {!! Form::text('title','',['class'=>'form-control']) !!}
+                        {!! Form::text('title',isset($params['title']) ? $params['title'] : '',['class'=>'form-control']) !!}
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                         {!! Form::label('category_id','Category : ',['class'=>'font-weight-bold']) !!}
-                        {!! Form::select('category_id',$categories,'',['class'=>'form-control','placeholder'=>'Select Category']) !!}
+                        {!! Form::select('category_id',$categories,isset($params['category_id']) ? $params['category_id'] : '',['class'=>'form-control categoryId','placeholder'=>'Select Category']) !!}
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                         {!! Form::label('subcategory_id','Subcategory : ',['class'=>'font-weight-bold']) !!}
-                        {!! Form::select('subcategory_id',[],'',['class'=>'form-control','placeholder'=>'Select Subcategory']) !!}
+                        {!! Form::select('subcategory_id',[],isset($params['subcategory_id']) ? $params['subcategory_id'] : '',['class'=>'subcategoryId form-control','placeholder'=>'Select Subcategory']) !!}
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                         {!! Form::label('price','Price : ',['class'=>'font-weight-bold']) !!}
-                        {!! Form::number('price','',['class'=>'form-control']) !!}
+                        {!! Form::number('price',isset($params['price']) ? $params['price'] : '',['class'=>'form-control']) !!}
                     </div>
                 </div>
                 <div class="col-md-3">
